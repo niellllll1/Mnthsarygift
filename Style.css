@@ -1,0 +1,137 @@
+
+
+  
+
+body {
+  font-family: 'Lora', serif;
+
+  background-image: url(m.jpg);
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100vh;
+
+  margin: 0;
+
+  overflow: hidden; 
+
+}
+
+
+
+.letter-container {
+
+  position: relative;
+
+  perspective: 1000px; 
+
+}
+
+
+
+.letter {
+
+  width: 350px;
+
+  height: 600px; 
+
+  background-color: rgba(0,0,0,0.5); 
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+
+  border-radius: 20px; 
+
+  padding: 30px;
+
+  display: none;
+
+  animation: fadeIn 1s ease-in-out;
+
+  transform-style: preserve-3d; 
+
+}
+
+
+
+.letter p { 
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+
+  color: white;
+
+  text-shadow: 5px 5px 5px gray;
+
+}
+
+
+
+.open-button {
+
+  background-color: lightgray; 
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  border-radius: 10px;
+
+  transition: background-color 0.3s ease; 
+
+}
+
+
+
+.open-button:hover {
+
+  background-color: ligtgray; 
+
+}
+
+
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(20px); 
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+
+.letter.open {
+
+  display: block;
+
+}
+
